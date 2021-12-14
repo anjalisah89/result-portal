@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Studrnt result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <script>
+        window.onload = () => {
+            // ######## Enter data here ########
+            // name of element is id+password
+            const data = {
+                shubham123: {
+                    namei: "Shubham Singh",
+                    id: "CS2100101698",
+                    sem: "4th",
+                    sec: "A",
+                    roll: 2021080150,
+                    year: 2021,
+                    gender: "Male",
+                    branch: "Computer Science & ENGINEERING ",
+                    blood: "O+",
+                    tsemester: 450,
+                    tcredits: 289,
+                    tpoints: 739,
+                    gpa: "9.2 / 10",
+                    sub: [{
+                        code: "CS231",
+                        name: "Computer Architecture and Organization",
+                        sem: "55",
+                        credits: "33",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CS254",
+                        name: "Introduction to Information Security & Cryptography",
+                        sem: "56",
+                        credits: "35",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CS230",
+                        name: "Introduction to Communication Skills",
+                        sem: "59",
+                        credits: "36",
+                        letter: "A",
+                        points: "4"
+
+                    }, {
+                        code: "CS234",
+                        name: "Object Oriented Programming Using JAVA",
+                        sem: "55",
+                        credits: "35",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CS232",
+                        name: "Data Structure & Algorithm",
+                        sem: "59",
+                        credits: "38",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CS239",
+                        name: "Operating System Building Blocks",
+                        sem: "58",
+                        credits: "35",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CS235",
+                        name: "Object Oriented Programming Using JAVA LAB",
+                        sem: "56",
+                        credits: "38",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CS233",
+                        name: "Mega Project LAB",
+                        sem: "52",
+                        credits: "39",
+                        letter: "A",
+                        points: "4"
+                    }, ]
+                },
+                shruti123: {
+                    namei: "Shruti Swaroop",
+                    id: "EE2100102538",
+                    sem: "5th",
+                    sec: "A",
+                    roll: 2021018294,
+                    year: 2021,
+                    gender: "Female",
+                    branch: "ELECTRICAL ENGINEERING",
+                    blood: "B+",
+                    tsemester: 423,
+                    tcredits: 280,
+                    tpoints: 703,
+                    gpa: "8.7 / 10",
+                    sub: [{
+                        code: "EE201",
+                        name: "Linear Network Systems and Data Algorithms",
+                        sem: "52",
+                        credits: "38",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CS203",
+                        name: "Cyber Law & Information Security",
+                        sem: "44",
+                        credits: "30",
+                        letter: "B",
+                        points: "3"
+                    }, {
+                        code: "CS203",
+                        name: "Electro Mechanical Energy Conversion Part-I",
+                        sem: "57",
+                        credits: "36",
+                        letter: "A",
+                        points: "4"
+
+                    }, {
+                        code: "BM226",
+                        name: "Human Values & Professional Ethics",
+                        sem: "58",
+                        credits: "32",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "EE207",
+                        name: "Fundamentals of EMFT ",
+                        sem: "52",
+                        credits: "38",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "MT201",
+                        name: "Engineering Mathematics-III",
+                        sem: "51",
+                        credits: "35",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "EE202",
+                        name: "Linear Network Systems and Data Algorithms LAB",
+                        sem: "55",
+                        credits: "34",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CS206",
+                        name: "Solid State Devices & Circuits LAB",
+                        sem: "54",
+                        credits: "37",
+                        letter: "A",
+                        points: "4"
+                    }, ]
+                },
+                mariyam123: {
+                    namei: "Mariyam Akhtar",
+                    id: "CA2000100716",
+                    sem: "3rd",
+                    sec: "B",
+                    roll: 2001018158,
+                    year: 2021,
+                    gender: "Female",
+                    branch: "Bachelor of Computer Application",
+                    blood: "A+",
+                    tsemester: 436,
+                    tcredits: 290,
+                    tpoints: 726,
+                    gpa: "9.07 / 10",
+                    sub: [{
+                        code: "BM228",
+                        name: "Accounting and Financial Management",
+                        sem: "55",
+                        credits: "38",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CA201",
+                        name: "Combinatorics and Graph Theory",
+                        sem: "54",
+                        credits: "35",
+                        letter: "a",
+                        points: "4"
+                    }, {
+                        code: "CA203",
+                        name: "Object Oriented Programming Concepts Using C++",
+                        sem: "53",
+                        credits: "36",
+                        letter: "A",
+                        points: "4"
+
+                    }, {
+                        code: "BM226",
+                        name: "Database Management System",
+                        sem: "58",
+                        credits: "34",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "MT202",
+                        name: "Computer Based Numerical and Statistical Techniques ",
+                        sem: "57",
+                        credits: "35",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CA205",
+                        name: "Mini Project LAB ",
+                        sem: "54",
+                        credits: "38",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CA206",
+                        name: "Object Oriented Programming Concepts Using C++ LAB",
+                        sem: "56",
+                        credits: "34",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "CA207",
+                        name: "Database Management System LAB",
+                        sem: "52",
+                        credits: "39",
+                        letter: "A",
+                        points: "4"
+                    }, ]
+                },
+                hamzah123: {
+                    namei: "Hamzah Ansari",
+                    id: "AE2100101184",
+                    sem: "3rd",
+                    sec: "C",
+                    roll: 2021018166,
+                    year: 2021,
+                    gender: "Male",
+                    branch: "AGRICULTURAL ENGINEERING",
+                    blood: "A+",
+                    tsemester: 405,
+                    tcredits: 271,
+                    tpoints: 676,
+                    gpa: "8.4 / 10",
+                    sub: [{
+                        code: "AG231",
+                        name: "Principles of Horticultural Crops and Plant Protection",
+                        sem: "48",
+                        credits: "32",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "AG232",
+                        name: "Principles of Agronomy",
+                        sem: "44",
+                        credits: "33",
+                        letter: "B",
+                        points: "3"
+                    }, {
+                        code: "MT222",
+                        name: "Mathematics in Agricultural Engineering -III",
+                        sem: "47",
+                        credits: "36",
+                        letter: "A",
+                        points: "4"
+
+                    }, {
+                        code: "AG252",
+                        name: "Design of Structures",
+                        sem: "54",
+                        credits: "32",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "ME229",
+                        name: "Thermodynamics, Refrigeration and Air Conditioning ",
+                        sem: "51",
+                        credits: "34",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "EE231",
+                        name: "Electrical Machines and Power Utilization",
+                        sem: "50",
+                        credits: "35",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "LN211",
+                        name: "Communication Skills and Personality Development",
+                        sem: "55",
+                        credits: "37",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "ME228",
+                        name: " Machine Design LAB",
+                        sem: "56",
+                        credits: "32",
+                        letter: "A",
+                        points: "4"
+                    }, ]
+                },
+                iram123: {
+                    namei: "Iram Parveen",
+                    id: "ME2100101716",
+                    sem: "5th",
+                    sec: "A",
+                    roll: 2021018294,
+                    year: 2021,
+                    gender: "Female",
+                    branch: "MECHANICAL ENGINEERING",
+                    blood: "O+",
+                    tsemester: 488,
+                    tcredits: 280,
+                    tpoints: 768,
+                    gpa: "9.6 / 10",
+                    sub: [{
+                        code: "MEE301",
+                        name: "Machine Design",
+                        sem: "52",
+                        credits: "38",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "MEE302",
+                        name: "Dynamics of Machines",
+                        sem: "44",
+                        credits: "30",
+                        letter: "B",
+                        points: "3"
+                    }, {
+                        code: "BME335",
+                        name: "Industrial Economics & Principles of Management",
+                        sem: "57",
+                        credits: "36",
+                        letter: "A",
+                        points: "4"
+
+                    }, {
+                        code: "MEE303",
+                        name: "Manufacturing Science-II",
+                        sem: "58",
+                        credits: "32",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "MEE304",
+                        name: "Heat & Mass Transfer ",
+                        sem: "56",
+                        credits: "38",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "MEE305",
+                        name: "Project Management",
+                        sem: "51",
+                        credits: "35",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "MEE306",
+                        name: "Machine Design LAB",
+                        sem: "56",
+                        credits: "34",
+                        letter: "A",
+                        points: "4"
+                    }, {
+                        code: "MEE308",
+                        name: " Dynamics of Machines LAB",
+                        sem: "58",
+                        credits: "37",
+                        letter: "A",
+                        points: "4"
+                    }, ]
+                },
+
+            }
+
+
+            function q(s) {
+                return document.querySelector(s);
+            }
+
+            let t;
+
+            function d(s) {
+                console.log(s)
+                q("." + s).innerHTML = t[s]
+            }
+
+            q("#sub").onclick = (e) => {
+                e.preventDefault()
+                let em = q("#user").value
+                let pass = q("#pass").value
+                if (em && pass) {
+                    if (data[em + pass]) {
+                        t = data[em + pass]
+                        d("namei")
+                        d("id")
+                        d("sem")
+                        d("sec")
+                        d("roll")
+                        d("year")
+                        d("gender")
+                        d("branch")
+                        d("blood")
+                        d("tcredits")
+                        d("tpoints")
+                        d("tsemester")
+                        d("gpa")
+                        data[em + pass].sub.forEach(s => {
+                            q("#subs").innerHTML += `<tr><td>${s.code}</td><td colspan="2">${s.name}</td><td> ${s.sem}</td><td>${s.credits}</td><td>${s.letter}</td><td>${s.points}</td></tr>`
+                        })
+                        q(".container1").classList.add("hidden")
+                        q(".student-profile").classList.remove("hidden")
+                    } else {
+                        alert("Invalid user or password");
+                    }
+                } else {
+                    alert("Fuelds are empty")
+                }
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    	<div class="content" ></div>
+    <div class="container1 top">
+        <form>
+            <div class="title">
+                Login
+            </div>
+            <div class="input-box underline">
+                <input id="user" type="text" placeholder="Enter Your UserID" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input id="pass" type="password" placeholder="Enter Your Password" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box button">
+                <input id="sub" type="submit" name="" value="Result">
+            </div>
+        </form>
+        <div class="option">
+            Forgot Password ?
+        </div>
+
+    </div>
+    <!-- Student Profile -->
+    <div class="student-profile py-4 top hidden">
+        <div class="container">
+            <div class="row" style="padding-top: 600px;" >
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-transparent text-center">
+                            <img class="profile_img" src="https://img.icons8.com/office/80/000000/user.png" alt="">
+                            <h3 class="namei">Ishmam Ahasan Samin</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-0">
+                                <strong class="pr-1">Student ID:</strong><span class="id">321000001</span>
+                            </p>
+                            <p class="mb-0">
+                                <strong class="pr-1">Semester:</strong><span class="sem">4</span>
+                            </p>
+                            <p class="mb-0">
+                                <strong class="pr-1">Section:</strong><span class="sec">A</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-transparent border-0">
+                            <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+                        </div>
+                        <div class="card-body pt-0">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th width="30%">Roll</th>
+                                    <td width="2%">:</td>
+                                    <td class="roll">125</td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">Academic Year </th>
+                                    <td width="2%">:</td>
+                                    <td class="year">2020</td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">Gender</th>
+                                    <td width="2%">:</td>
+                                    <td class="gender">Male</td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">Branch</th>
+                                    <td width="2%">:</td>
+                                    <td class="branch">Group</td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">blood</th>
+                                    <td width="2%">:</td>
+                                    <td class="blood">B+</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div clas="row">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="3">Course </td>
+                            <td rowspan="2"> Semester </td>
+                            <td rowspan="2"> Credits </td>
+                            <td colspan="2"> Grade </td>
+                        </tr>
+
+                        <tr>
+                            <td>Code </td>
+                            <td colspan="2"> Name </td>
+                            <td> Letter </td>
+                            <td> Points </td>
+                        </tr>
+                    </thead>
+                    <tbody id="subs">
+
+                        <!--<tr>
+                                                                                <td>PHIL 105 </td>
+                                                                                <td colspan="2">Ethics </td>
+                                                                                <td> Fall 2015</td>
+                                                                                <td> 3.0 </td>
+                                                                                <td> A- </td>
+                                                                                <td> 10.98 </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td>ECE 310 </td>
+                                                                                <td colspan="2">Digital Signal Processing </td>
+                                                                                <td> Fall 2015</td>
+                                                                                <td> 3.0 </td>
+                                                                                <td> A </td>
+                                                                                <td> 12 </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td>CS 373 </td>
+                                                                                <td colspan="2">Combinatorial Algorithms </td>
+                                                                                <td> Fall 2015</td>
+                                                                                <td> 3.0 </td>
+                                                                                <td> B+ </td>
+                                                                                <td> 9.99</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td>MATH 225 </td>
+                                                                                <td colspan="2">Multi-Variable Calculus </td>
+                                                                                <td> Fall 2015</td>
+                                                                                <td> 3.0 </td>
+                                                                                <td> A- </td>
+                                                                                <td> 10.98 </td>
+                                                                              </tr>-->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="footer">Total</td>
+                            <td class="tsemester"> </td>
+                            <td class="tcredits"> 15.0 </td>
+                            <td colspan="4" class="tpoints">55.95 </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="footer">GPA</td>
+                            <td colspan="6" class="gpa">3.73 / 4.0 </td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+    	
+
+</body>
+
+</html>
